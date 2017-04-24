@@ -6,11 +6,15 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductsListViewController" customModule="Rokk3rLabsTest" customModuleProvider="target">
             <connections>
+                <outlet property="shoppingCartContainer" destination="O72-W6-gCz" id="9Wd-r0-FAW"/>
+                <outlet property="shoppingCartProductsCountLabel" destination="hp2-gx-fBL" id="u9h-QC-R7m"/>
+                <outlet property="shoppingCartTotalSpentLabel" destination="Kln-Tc-ozr" id="7Lk-8S-q4i"/>
                 <outlet property="tableView" destination="32I-a1-TOT" id="Htb-Tz-vpc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -20,8 +24,74 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oFe-Uh-KT6">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZ1-qQ-rFT">
+                            <rect key="frame" x="175" y="0.0" width="200" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="200" id="h1W-bY-PhY"/>
+                            </constraints>
+                            <connections>
+                                <action selector="shoppingCartBarButtonPressed" destination="-1" eventType="touchUpInside" id="A6o-me-vWv"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cart" translatesAutoresizingMaskIntoConstraints="NO" id="GTI-Ef-Lyq">
+                            <rect key="frame" x="330" y="15" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="MsN-xm-JaH"/>
+                                <constraint firstAttribute="height" constant="30" id="RUs-5A-bOi"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O72-W6-gCz">
+                            <rect key="frame" x="348" y="3" width="24" height="24"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hp2-gx-fBL">
+                                    <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.46274509800000002" green="0.3803921569" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="66X-08-8Hl"/>
+                                <constraint firstAttribute="width" constant="24" id="6Ju-yd-nKO"/>
+                                <constraint firstItem="hp2-gx-fBL" firstAttribute="top" secondItem="O72-W6-gCz" secondAttribute="top" id="BEV-6d-z79"/>
+                                <constraint firstAttribute="bottom" secondItem="hp2-gx-fBL" secondAttribute="bottom" id="LIG-gP-tHT"/>
+                                <constraint firstAttribute="trailing" secondItem="hp2-gx-fBL" secondAttribute="trailing" id="N45-Xu-5OH"/>
+                                <constraint firstItem="hp2-gx-fBL" firstAttribute="leading" secondItem="O72-W6-gCz" secondAttribute="leading" id="Pkl-rl-bnH"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total spent: $0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kln-Tc-ozr">
+                            <rect key="frame" x="216.5" y="21.5" width="103.5" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="0.23627232140000001" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="NZ1-qQ-rFT" secondAttribute="trailing" id="JpO-3E-QwR"/>
+                        <constraint firstItem="NZ1-qQ-rFT" firstAttribute="top" secondItem="oFe-Uh-KT6" secondAttribute="top" id="Nve-kI-0PN"/>
+                        <constraint firstAttribute="trailing" secondItem="GTI-Ef-Lyq" secondAttribute="trailing" constant="15" id="PAg-Cf-UEf"/>
+                        <constraint firstAttribute="bottom" secondItem="NZ1-qQ-rFT" secondAttribute="bottom" id="PFX-Mh-wzb"/>
+                        <constraint firstAttribute="height" constant="60" id="PyC-oQ-2cS"/>
+                        <constraint firstItem="GTI-Ef-Lyq" firstAttribute="leading" secondItem="Kln-Tc-ozr" secondAttribute="trailing" constant="10" id="Xka-MS-f34"/>
+                        <constraint firstItem="Kln-Tc-ozr" firstAttribute="centerY" secondItem="GTI-Ef-Lyq" secondAttribute="centerY" id="Xzn-RM-evp"/>
+                        <constraint firstItem="O72-W6-gCz" firstAttribute="centerY" secondItem="GTI-Ef-Lyq" secondAttribute="top" id="aMh-wc-bUs"/>
+                        <constraint firstItem="GTI-Ef-Lyq" firstAttribute="centerY" secondItem="oFe-Uh-KT6" secondAttribute="centerY" id="kAX-Rd-IB2"/>
+                        <constraint firstItem="O72-W6-gCz" firstAttribute="centerX" secondItem="GTI-Ef-Lyq" secondAttribute="trailing" id="rNG-gD-2io"/>
+                    </constraints>
+                </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="32I-a1-TOT">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="frame" x="0.0" y="60" width="375" height="607"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
@@ -29,9 +99,17 @@
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="32I-a1-TOT" secondAttribute="bottom" id="3Od-YE-643"/>
                 <constraint firstItem="32I-a1-TOT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MmO-tg-uOV"/>
-                <constraint firstItem="32I-a1-TOT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="VIM-52-ZOS"/>
+                <constraint firstItem="32I-a1-TOT" firstAttribute="top" secondItem="oFe-Uh-KT6" secondAttribute="bottom" id="OvI-HH-1S8"/>
+                <constraint firstAttribute="trailing" secondItem="oFe-Uh-KT6" secondAttribute="trailing" id="VoB-HB-xJ2"/>
+                <constraint firstItem="oFe-Uh-KT6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="WNN-xi-00X"/>
                 <constraint firstAttribute="trailing" secondItem="32I-a1-TOT" secondAttribute="trailing" id="sDY-Wq-g72"/>
+                <constraint firstItem="oFe-Uh-KT6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="toI-l3-eW7"/>
             </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="45.5" y="54.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="cart" width="200" height="200"/>
+    </resources>
 </document>

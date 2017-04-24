@@ -12,6 +12,9 @@ class ProductsListViewController: BaseViewController {
     
     // MARK: - Views -
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var shoppingCartContainer: UIView!
+    @IBOutlet weak var shoppingCartTotalSpentLabel: UILabel!
+    @IBOutlet weak var shoppingCartProductsCountLabel: UILabel!
     
     // MARK: - Attributes -
     let viewModel: ProductsListViewModel
@@ -20,6 +23,9 @@ class ProductsListViewController: BaseViewController {
     // MARK: - Life cycle -
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        automaticallyAdjustsScrollViewInsets = false
+        edgesForExtendedLayout = []
         
         configureNavigationBar()
         configureTableViewAdapter()
@@ -30,6 +36,7 @@ class ProductsListViewController: BaseViewController {
         super.viewWillAppear(animated)
         
         didReceiveProducts(viewModel.products.value)
+        configureShoppingCartProductsIndicator()
     }
     
     // MARK: - Init -
@@ -44,9 +51,7 @@ class ProductsListViewController: BaseViewController {
     // MARK: - Configuration -
     
     private func configureNavigationBar() {
-        let shoppingCartBarButton = UIBarButtonItem(title: "Cart", style: UIBarButtonItemStyle.done, target: self, action: #selector(shoppingCartBarButtonPressed))
-        
-        navigationItem.rightBarButtonItem = shoppingCartBarButton
+        title = "Products"
     }
     
     private func configureTableViewAdapter() {
@@ -66,9 +71,22 @@ class ProductsListViewController: BaseViewController {
     fileprivate func didReceiveProducts(_ products: [Product]) {
         tableViewAdapter?.reload(with: products)
     }
+    
+    fileprivate func configureShoppingCartProductsIndicator() {
+        let productsCount = ShoppingCart.shared.products.count
+        if productsCount > 0 {
+            shoppingCartProductsCountLabel.text = productsCount.description
+            shoppingCartContainer.isHidden = false
+        } else {
+            shoppingCartContainer.isHidden = true
+        }
+        
+        let totalSpent = ShoppingCart.shared.totalSpent
+        shoppingCartTotalSpentLabel.text = "Total spent: $\(totalSpent)"
+    }
 
     // MARK: - Actions -
-    @objc private func shoppingCartBarButtonPressed() {
+    @IBAction func shoppingCartBarButtonPressed() {
         let shoppingCartViewController = ShoppingCartListViewController.instantiate()
         let shoppingCartNavigationController = BaseNavigationController(rootViewController: shoppingCartViewController)
         shoppingCartViewController.delegate = self
@@ -80,6 +98,7 @@ class ProductsListViewController: BaseViewController {
 extension ProductsListViewController: ProductsListTableViewAdapterDelegate {
     func productsListTableViewAdapterDidSelectBuy(on product: Product) {
         viewModel.didPressBuy(product: product)
+        configureShoppingCartProductsIndicator()
     }
 }
 
@@ -87,6 +106,7 @@ extension ProductsListViewController: ProductsListTableViewAdapterDelegate {
 extension ProductsListViewController: ShoppingCartListViewControllerDelegate {
     func didSelectRemove(product: Product) {
         viewModel.didPressRemove(product: product)
+        configureShoppingCartProductsIndicator()
     }
 }
 

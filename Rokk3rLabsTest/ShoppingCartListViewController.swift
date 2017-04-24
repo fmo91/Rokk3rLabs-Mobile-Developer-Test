@@ -52,6 +52,8 @@ class ShoppingCartListViewController: BaseViewController {
     
     // MARK: - Configuration -
     private func configureNavigationBar() {
+        title = "Shopping Cart"
+        
         let doneButton = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(doneButtonPressed))
         navigationItem.rightBarButtonItem = doneButton
     }

@@ -14,6 +14,12 @@ final class ShoppingCart {
     private init() {}
     static let shared = ShoppingCart()
     
+    var totalSpent: Double {
+        return products
+            .map { $0.price * Double($0.stock) }
+            .reduce(0, +)
+    }
+    
     func add(product: Product) {
         if let index = products.index(where: { (_ _product: Product) -> Bool in
             return _product.id == product.id
