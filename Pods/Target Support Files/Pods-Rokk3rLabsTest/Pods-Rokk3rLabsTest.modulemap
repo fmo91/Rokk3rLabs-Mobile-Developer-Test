@@ -1,0 +1,6 @@
+framework module Pods_Rokk3rLabsTest {
+  umbrella header "Pods-Rokk3rLabsTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

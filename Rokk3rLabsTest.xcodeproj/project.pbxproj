@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F7217650163CA11F0531AD7 /* Pods_Rokk3rLabsTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ED29CCC063DA1744E93338C /* Pods_Rokk3rLabsTest.framework */; };
+		2265771C766BA6760B4129A5 /* Pods_Rokk3rLabsTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D79051FACB136FB5B73C2D /* Pods_Rokk3rLabsTestTests.framework */; };
+		7E0806C61EAE6CF500DBFCFE /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0806C51EAE6CF500DBFCFE /* DataManager.swift */; };
+		7E0806C81EAE6DCD00DBFCFE /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E0806C71EAE6DCD00DBFCFE /* products.json */; };
 		7E6B47A41EAE6A0A0075BDE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6B47A31EAE6A0A0075BDE1 /* AppDelegate.swift */; };
-		7E6B47A61EAE6A0A0075BDE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6B47A51EAE6A0A0075BDE1 /* ViewController.swift */; };
-		7E6B47A91EAE6A0A0075BDE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6B47A71EAE6A0A0075BDE1 /* Main.storyboard */; };
 		7E6B47AB1EAE6A0A0075BDE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E6B47AA1EAE6A0A0075BDE1 /* Assets.xcassets */; };
 		7E6B47AE1EAE6A0A0075BDE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6B47AC1EAE6A0A0075BDE1 /* LaunchScreen.storyboard */; };
 		7E6B47B91EAE6A0B0075BDE1 /* Rokk3rLabsTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6B47B81EAE6A0B0075BDE1 /* Rokk3rLabsTestTests.swift */; };
+		7EDDDB481EAE6B8E0080D354 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDDDB471EAE6B8E0080D354 /* BaseViewController.swift */; };
+		7EDDDB4E1EAE6CAE0080D354 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDDDB4D1EAE6CAE0080D354 /* Product.swift */; };
+		7EDDDB501EAE6CB70080D354 /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDDDB4F1EAE6CB70080D354 /* ShoppingCart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +31,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		357F5027F23C7EE7BED4078A /* Pods-Rokk3rLabsTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rokk3rLabsTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rokk3rLabsTestTests/Pods-Rokk3rLabsTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		55D79051FACB136FB5B73C2D /* Pods_Rokk3rLabsTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rokk3rLabsTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65E779961C829F77A51CA983 /* Pods-Rokk3rLabsTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rokk3rLabsTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rokk3rLabsTest/Pods-Rokk3rLabsTest.release.xcconfig"; sourceTree = "<group>"; };
+		780211B1200BB0388B1B6F9E /* Pods-Rokk3rLabsTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rokk3rLabsTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rokk3rLabsTestTests/Pods-Rokk3rLabsTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		7E0806C51EAE6CF500DBFCFE /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		7E0806C71EAE6DCD00DBFCFE /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
 		7E6B47A01EAE6A0A0075BDE1 /* Rokk3rLabsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rokk3rLabsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6B47A31EAE6A0A0075BDE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7E6B47A51EAE6A0A0075BDE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7E6B47A81EAE6A0A0075BDE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E6B47AA1EAE6A0A0075BDE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E6B47AD1EAE6A0A0075BDE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E6B47AF1EAE6A0A0075BDE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E6B47B41EAE6A0B0075BDE1 /* Rokk3rLabsTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Rokk3rLabsTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6B47B81EAE6A0B0075BDE1 /* Rokk3rLabsTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rokk3rLabsTestTests.swift; sourceTree = "<group>"; };
 		7E6B47BA1EAE6A0B0075BDE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EDDDB471EAE6B8E0080D354 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		7EDDDB4D1EAE6CAE0080D354 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		7EDDDB4F1EAE6CB70080D354 /* ShoppingCart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
+		864C6DFDBE4ED27A7F5FC072 /* Pods-Rokk3rLabsTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rokk3rLabsTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rokk3rLabsTest/Pods-Rokk3rLabsTest.debug.xcconfig"; sourceTree = "<group>"; };
+		9ED29CCC063DA1744E93338C /* Pods_Rokk3rLabsTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rokk3rLabsTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F7217650163CA11F0531AD7 /* Pods_Rokk3rLabsTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +65,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2265771C766BA6760B4129A5 /* Pods_Rokk3rLabsTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56C0F90B5D861BC381744FA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				864C6DFDBE4ED27A7F5FC072 /* Pods-Rokk3rLabsTest.debug.xcconfig */,
+				65E779961C829F77A51CA983 /* Pods-Rokk3rLabsTest.release.xcconfig */,
+				357F5027F23C7EE7BED4078A /* Pods-Rokk3rLabsTestTests.debug.xcconfig */,
+				780211B1200BB0388B1B6F9E /* Pods-Rokk3rLabsTestTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7E6B47971EAE6A0A0075BDE1 = {
 			isa = PBXGroup;
 			children = (
 				7E6B47A21EAE6A0A0075BDE1 /* Rokk3rLabsTest */,
 				7E6B47B71EAE6A0B0075BDE1 /* Rokk3rLabsTestTests */,
 				7E6B47A11EAE6A0A0075BDE1 /* Products */,
+				56C0F90B5D861BC381744FA6 /* Pods */,
+				840B644F71A771E2F5F6E080 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,11 +106,12 @@
 		7E6B47A21EAE6A0A0075BDE1 /* Rokk3rLabsTest */ = {
 			isa = PBXGroup;
 			children = (
+				7EDDDB451EAE6B780080D354 /* Model */,
+				7EDDDB441EAE6B720080D354 /* Data Layer */,
+				7EDDDB491EAE6C020080D354 /* Utils */,
+				7EDDDB421EAE6B680080D354 /* Resources */,
+				7EDDDB431EAE6B6D0080D354 /* Application */,
 				7E6B47A31EAE6A0A0075BDE1 /* AppDelegate.swift */,
-				7E6B47A51EAE6A0A0075BDE1 /* ViewController.swift */,
-				7E6B47A71EAE6A0A0075BDE1 /* Main.storyboard */,
-				7E6B47AA1EAE6A0A0075BDE1 /* Assets.xcassets */,
-				7E6B47AC1EAE6A0A0075BDE1 /* LaunchScreen.storyboard */,
 				7E6B47AF1EAE6A0A0075BDE1 /* Info.plist */,
 			);
 			path = Rokk3rLabsTest;
@@ -96,6 +126,89 @@
 			path = Rokk3rLabsTestTests;
 			sourceTree = "<group>";
 		};
+		7EDDDB421EAE6B680080D354 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7E6B47AA1EAE6A0A0075BDE1 /* Assets.xcassets */,
+				7E6B47AC1EAE6A0A0075BDE1 /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7EDDDB431EAE6B6D0080D354 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				7EDDDB461EAE6B7E0080D354 /* Base */,
+				7EDDDB4B1EAE6C160080D354 /* Products List */,
+				7EDDDB4C1EAE6C1D0080D354 /* Shopping Cart List */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		7EDDDB441EAE6B720080D354 /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+				7EDDDB4A1EAE6C0A0080D354 /* Dummy Data */,
+				7E0806C51EAE6CF500DBFCFE /* DataManager.swift */,
+			);
+			name = "Data Layer";
+			sourceTree = "<group>";
+		};
+		7EDDDB451EAE6B780080D354 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7EDDDB4D1EAE6CAE0080D354 /* Product.swift */,
+				7EDDDB4F1EAE6CB70080D354 /* ShoppingCart.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7EDDDB461EAE6B7E0080D354 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7EDDDB471EAE6B8E0080D354 /* BaseViewController.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		7EDDDB491EAE6C020080D354 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		7EDDDB4A1EAE6C0A0080D354 /* Dummy Data */ = {
+			isa = PBXGroup;
+			children = (
+				7E0806C71EAE6DCD00DBFCFE /* products.json */,
+			);
+			name = "Dummy Data";
+			sourceTree = "<group>";
+		};
+		7EDDDB4B1EAE6C160080D354 /* Products List */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Products List";
+			sourceTree = "<group>";
+		};
+		7EDDDB4C1EAE6C1D0080D354 /* Shopping Cart List */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Shopping Cart List";
+			sourceTree = "<group>";
+		};
+		840B644F71A771E2F5F6E080 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9ED29CCC063DA1744E93338C /* Pods_Rokk3rLabsTest.framework */,
+				55D79051FACB136FB5B73C2D /* Pods_Rokk3rLabsTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E6B47BD1EAE6A0B0075BDE1 /* Build configuration list for PBXNativeTarget "Rokk3rLabsTest" */;
 			buildPhases = (
+				F7E00DBB8881F3A7B67E67AE /* [CP] Check Pods Manifest.lock */,
 				7E6B479C1EAE6A0A0075BDE1 /* Sources */,
 				7E6B479D1EAE6A0A0075BDE1 /* Frameworks */,
 				7E6B479E1EAE6A0A0075BDE1 /* Resources */,
+				B604D626FD738A412134A559 /* [CP] Embed Pods Frameworks */,
+				5D0FBC2C560C3E1A277CD2A9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E6B47C01EAE6A0B0075BDE1 /* Build configuration list for PBXNativeTarget "Rokk3rLabsTestTests" */;
 			buildPhases = (
+				D7EA08DFDDCBBC6BD1661892 /* [CP] Check Pods Manifest.lock */,
 				7E6B47B01EAE6A0B0075BDE1 /* Sources */,
 				7E6B47B11EAE6A0B0075BDE1 /* Frameworks */,
 				7E6B47B21EAE6A0B0075BDE1 /* Resources */,
+				6C59D869985C3AEE50348516 /* [CP] Embed Pods Frameworks */,
+				C2B2B151B1B5D9A1CE23B5B2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,9 +298,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E0806C81EAE6DCD00DBFCFE /* products.json in Resources */,
 				7E6B47AE1EAE6A0A0075BDE1 /* LaunchScreen.storyboard in Resources */,
 				7E6B47AB1EAE6A0A0075BDE1 /* Assets.xcassets in Resources */,
-				7E6B47A91EAE6A0A0075BDE1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,13 +313,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5D0FBC2C560C3E1A277CD2A9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rokk3rLabsTest/Pods-Rokk3rLabsTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C59D869985C3AEE50348516 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rokk3rLabsTestTests/Pods-Rokk3rLabsTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B604D626FD738A412134A559 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rokk3rLabsTest/Pods-Rokk3rLabsTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2B2B151B1B5D9A1CE23B5B2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rokk3rLabsTestTests/Pods-Rokk3rLabsTestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7EA08DFDDCBBC6BD1661892 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F7E00DBB8881F3A7B67E67AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7E6B479C1EAE6A0A0075BDE1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E6B47A61EAE6A0A0075BDE1 /* ViewController.swift in Sources */,
 				7E6B47A41EAE6A0A0075BDE1 /* AppDelegate.swift in Sources */,
+				7E0806C61EAE6CF500DBFCFE /* DataManager.swift in Sources */,
+				7EDDDB481EAE6B8E0080D354 /* BaseViewController.swift in Sources */,
+				7EDDDB4E1EAE6CAE0080D354 /* Product.swift in Sources */,
+				7EDDDB501EAE6CB70080D354 /* ShoppingCart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,14 +438,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7E6B47A71EAE6A0A0075BDE1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7E6B47A81EAE6A0A0075BDE1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7E6B47AC1EAE6A0A0075BDE1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -335,6 +542,7 @@
 		};
 		7E6B47BE1EAE6A0B0075BDE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 864C6DFDBE4ED27A7F5FC072 /* Pods-Rokk3rLabsTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Rokk3rLabsTest/Info.plist;
@@ -347,6 +555,7 @@
 		};
 		7E6B47BF1EAE6A0B0075BDE1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65E779961C829F77A51CA983 /* Pods-Rokk3rLabsTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Rokk3rLabsTest/Info.plist;
@@ -359,6 +568,7 @@
 		};
 		7E6B47C11EAE6A0B0075BDE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 357F5027F23C7EE7BED4078A /* Pods-Rokk3rLabsTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -373,6 +583,7 @@
 		};
 		7E6B47C21EAE6A0B0075BDE1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 780211B1200BB0388B1B6F9E /* Pods-Rokk3rLabsTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -404,6 +615,7 @@
 				7E6B47BF1EAE6A0B0075BDE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E6B47C01EAE6A0B0075BDE1 /* Build configuration list for PBXNativeTarget "Rokk3rLabsTestTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +624,7 @@
 				7E6B47C21EAE6A0B0075BDE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

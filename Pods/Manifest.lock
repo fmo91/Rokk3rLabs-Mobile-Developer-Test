@@ -1,0 +1,22 @@
+PODS:
+  - DequeuableRegistrable (0.1.5)
+  - ObjectMapper (2.2.2)
+  - RxCocoa (3.0.1):
+    - RxSwift (~> 3.0)
+  - RxSwift (3.0.1)
+
+DEPENDENCIES:
+  - DequeuableRegistrable (= 0.1.5)
+  - ObjectMapper (= 2.2.2)
+  - RxCocoa (= 3.0.1)
+  - RxSwift (= 3.0.1)
+
+SPEC CHECKSUMS:
+  DequeuableRegistrable: 14564a201868431bbd70dd53e9b6f1dee716e37e
+  ObjectMapper: 9e385c2295bcc4e16eabbcfc85db801442bba545
+  RxCocoa: 15a52fc590dcc700cb4a690a633b5c5184ce3a78
+  RxSwift: af5680055c4ad04480189c52d28385b1029493a6
+
+PODFILE CHECKSUM: 82c49b7feaceb4e20eb84673de11c36a9ae19f9a
+
+COCOAPODS: 1.1.1
