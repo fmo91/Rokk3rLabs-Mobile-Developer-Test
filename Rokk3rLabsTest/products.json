@@ -22,119 +22,119 @@
     },
     {
         "id": 4,
-        "name": "Pikachu toy",
-        "image_url": "https://images-na.ssl-images-amazon.com/images/I/41PEYhzWEqL._SX300_.jpg",
-        "price": 23.50,
+        "name": "Blastoise toy",
+        "image_url": "http://imgs.inkfrog.com/pix/powergamer88/TK-4904810492962-2.jpg",
+        "price": 20.50,
         "stock": 10
     },
     {
         "id": 5,
-        "name": "Pikachu toy",
-        "image_url": "https://images-na.ssl-images-amazon.com/images/I/41PEYhzWEqL._SX300_.jpg",
+        "name": "Shower",
+        "image_url": "http://kingfisher.scene7.com/is/image/Kingfisher/5013181063936_01i?crop=103,103,1488,1050&anchor=847,628&wid=600",
         "price": 23.50,
         "stock": 10
     },
     {
         "id": 6,
-        "name": "Pikachu toy",
-        "image_url": "https://images-na.ssl-images-amazon.com/images/I/41PEYhzWEqL._SX300_.jpg",
-        "price": 23.50,
-        "stock": 10
+        "name": "Plant",
+        "image_url": "http://assets.inhabitat.com/wp-content/blogs.dir/1/files/2012/03/golden-pothos-plant-537x337.jpg",
+        "price": 12.50,
+        "stock": 7
     },
     {
         "id": 7,
-        "name": "Pikachu toy",
-        "image_url": "https://images-na.ssl-images-amazon.com/images/I/41PEYhzWEqL._SX300_.jpg",
-        "price": 23.50,
-        "stock": 10
+        "name": "Other cookies",
+        "image_url": "http://assets.simplyrecipes.com/wp-content/uploads/2010/12/cinnamon-snap-cookies-horiz-a-1600-600x400.jpg",
+        "price": 2.00,
+        "stock": 1000
     },
     {
         "id": 8,
-        "name": "Pikachu toy",
-        "image_url": "https://images-na.ssl-images-amazon.com/images/I/41PEYhzWEqL._SX300_.jpg",
-        "price": 23.50,
-        "stock": 10
+        "name": "Coffee",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/275px-A_small_cup_of_coffee.JPG",
+        "price": 9.50,
+        "stock": 140
     },
     {
         "id": 9,
-        "name": "Pikachu toy",
-        "image_url": "https://images-na.ssl-images-amazon.com/images/I/41PEYhzWEqL._SX300_.jpg",
-        "price": 23.50,
-        "stock": 10
+        "name": "Butter",
+        "image_url": "http://www.webexhibits.org/butter/i/full/iStock_000006937653Small.jpg",
+        "price": 203.50,
+        "stock": 2
     },
     {
         "id": 10,
-        "name": "Pikachu toy",
-        "image_url": "https://images-na.ssl-images-amazon.com/images/I/41PEYhzWEqL._SX300_.jpg",
-        "price": 23.50,
-        "stock": 10
+        "name": "iPhone 6s",
+        "image_url": "https://www.o2.co.uk/shop/homepage/images/shop15/brand/apple/iphone-6s/apple-iphone-6s-2016-ios-ios-10-gallery-img-5-101016.jpg",
+        "price": 2300.50,
+        "stock": 1
     },
     {
         "id": 11,
-        "name": "Pikachu toy",
-        "image_url": "https://images-na.ssl-images-amazon.com/images/I/41PEYhzWEqL._SX300_.jpg",
-        "price": 23.50,
-        "stock": 10
+        "name": "Samsung Galaxy S7",
+        "image_url": "https://d243u7pon29hni.cloudfront.net/images/products/movil-samsung-galaxy-s7-edge-32gb-4g-1325764-5%20(3)_ad_l.png",
+        "price": 2100.00,
+        "stock": 4
     },
     {
         "id": 12,
-        "name": "Pikachu toy",
-        "image_url": "https://images-na.ssl-images-amazon.com/images/I/41PEYhzWEqL._SX300_.jpg",
-        "price": 23.50,
-        "stock": 10
+        "name": "Cup",
+        "image_url": "https://keepcupcnd.scdn4.secure.raxcdn.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/c/u/cup.jpg",
+        "price": 6.50,
+        "stock": 2
     },
     {
         "id": 13,
-        "name": "Pikachu toy",
-        "image_url": "https://images-na.ssl-images-amazon.com/images/I/41PEYhzWEqL._SX300_.jpg",
-        "price": 23.50,
-        "stock": 10
+        "name": "Glass",
+        "image_url": "https://ak1.ostkcdn.com/images/products/5111257/Libbey-Heavy-Base-20-oz-Iced-Tea-Glasses-Pack-of-12-P12962346.jpg",
+        "price": 4.50,
+        "stock": 5
     },
     {
         "id": 14,
-        "name": "Pikachu toy",
-        "image_url": "https://images-na.ssl-images-amazon.com/images/I/41PEYhzWEqL._SX300_.jpg",
+        "name": "Shirt",
+        "image_url": "https://smhttp-ssl-48567.nexcesscdn.net/media/catalog/product/cache/1/image/700x700/9df78eab33525d08d6e5fb8d27136e95/b/l/blue_logo_t-shirt_front.png",
         "price": 23.50,
         "stock": 10
     },
     {
         "id": 15,
-        "name": "Pikachu toy",
+        "name": "T-Shirt",
         "image_url": "https://images-na.ssl-images-amazon.com/images/I/41PEYhzWEqL._SX300_.jpg",
         "price": 23.50,
         "stock": 10
     },
     {
         "id": 16,
-        "name": "Pikachu toy",
-        "image_url": "http://37n98a43dqtb4bua9n28nidp.wpengine.netdna-cdn.com/wp-content/uploads/   2016/09/MyFriendPikachu.jpg",
+        "name": "Scarf",
+        "image_url": "http://esq.h-cdn.co/assets/cm/15/07/54d9537f6fe3c_-_1-scarves-1.jpg",
         "price": 23.50,
         "stock": 10
     },
     {
         "id": 17,
-        "name": "Pikachu toy",
-        "image_url": "https://images-na.ssl-images-amazon.com/images/I/41PEYhzWEqL._SX300_.jpg",
+        "name": "Milk",
+        "image_url": "https://recyclenation.com/wp-content/uploads/2014/08/milk-carton-recycling.jpg",
         "price": 23.50,
         "stock": 10
     },
     {
         "id": 18,
-        "name": "Pikachu toy",
-        "image_url": "https://images-na.ssl-images-amazon.com/images/I/41PEYhzWEqL._SX300_.jpg",
-        "price": 23.50,
+        "name": "Chocolate",
+        "image_url": "http://static0.misionesonline.net/wp-content/uploads/2017/02/chocolate-21je23hlev3g.jpg",
+        "price": 8.20,
         "stock": 10
     },
     {
         "id": 19,
-        "name": "Pikachu toy",
+        "name": "Table",
         "image_url": "https://images-na.ssl-images-amazon.com/images/I/41PEYhzWEqL._SX300_.jpg",
         "price": 23.50,
         "stock": 10
     },
     {
         "id": 20,
-        "name": "Pikachu toy",
+        "name": "Cat",
         "image_url": "https://images-na.ssl-images-amazon.com/images/I/41PEYhzWEqL._SX300_.jpg",
         "price": 23.50,
         "stock": 10

@@ -75,9 +75,17 @@
                             <color key="textColor" white="0.23627232140000001" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Px3-RU-moQ" userLabel="Separator">
+                            <rect key="frame" x="0.0" y="59" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.87836366889999995" green="0.87846940760000003" blue="0.87832778690000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Vib-jK-ECq"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstItem="Px3-RU-moQ" firstAttribute="leading" secondItem="oFe-Uh-KT6" secondAttribute="leading" id="783-Uv-tXi"/>
                         <constraint firstAttribute="trailing" secondItem="NZ1-qQ-rFT" secondAttribute="trailing" id="JpO-3E-QwR"/>
                         <constraint firstItem="NZ1-qQ-rFT" firstAttribute="top" secondItem="oFe-Uh-KT6" secondAttribute="top" id="Nve-kI-0PN"/>
                         <constraint firstAttribute="trailing" secondItem="GTI-Ef-Lyq" secondAttribute="trailing" constant="15" id="PAg-Cf-UEf"/>
@@ -86,8 +94,10 @@
                         <constraint firstItem="GTI-Ef-Lyq" firstAttribute="leading" secondItem="Kln-Tc-ozr" secondAttribute="trailing" constant="10" id="Xka-MS-f34"/>
                         <constraint firstItem="Kln-Tc-ozr" firstAttribute="centerY" secondItem="GTI-Ef-Lyq" secondAttribute="centerY" id="Xzn-RM-evp"/>
                         <constraint firstItem="O72-W6-gCz" firstAttribute="centerY" secondItem="GTI-Ef-Lyq" secondAttribute="top" id="aMh-wc-bUs"/>
+                        <constraint firstAttribute="trailing" secondItem="Px3-RU-moQ" secondAttribute="trailing" id="bbC-FH-nDI"/>
                         <constraint firstItem="GTI-Ef-Lyq" firstAttribute="centerY" secondItem="oFe-Uh-KT6" secondAttribute="centerY" id="kAX-Rd-IB2"/>
                         <constraint firstItem="O72-W6-gCz" firstAttribute="centerX" secondItem="GTI-Ef-Lyq" secondAttribute="trailing" id="rNG-gD-2io"/>
+                        <constraint firstAttribute="bottom" secondItem="Px3-RU-moQ" secondAttribute="bottom" id="wol-aM-08n"/>
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="32I-a1-TOT">

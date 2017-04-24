@@ -24,9 +24,6 @@ class ProductsListViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        automaticallyAdjustsScrollViewInsets = false
-        edgesForExtendedLayout = []
-        
         configureNavigationBar()
         configureTableViewAdapter()
         configureViewModel()

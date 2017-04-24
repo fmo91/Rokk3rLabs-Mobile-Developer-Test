@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>DZNEmptyDataSet.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Kingfisher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,12 +42,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>14A5A26312E877BA249A5C88F86D076D</key>
+		<key>46C67526257E788516AF2F7F1AFCFDD6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5CFD2E62786F510642137CC312A80925</key>
+		<key>9297736C8C34A2A030AC14FDB6358230</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>97F732534E45D853CF0A0E8CA185D061</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +72,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CB0748CAA49E672B45541D932CF9700B</key>
+		<key>D386C75EFD4F03725E4EFB866B600B9A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
