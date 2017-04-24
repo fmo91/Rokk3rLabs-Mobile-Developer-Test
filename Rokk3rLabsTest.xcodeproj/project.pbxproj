@@ -21,6 +21,14 @@
 		7E0806E11EAE74AD00DBFCFE /* RLProductsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0806E01EAE74AD00DBFCFE /* RLProductsListViewModel.swift */; };
 		7E0806E41EAE760700DBFCFE /* ProductListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0806E21EAE760700DBFCFE /* ProductListTableViewCell.swift */; };
 		7E0806E51EAE760700DBFCFE /* ProductListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E0806E31EAE760700DBFCFE /* ProductListTableViewCell.xib */; };
+		7E0806E71EAE77DA00DBFCFE /* ProductsListTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0806E61EAE77DA00DBFCFE /* ProductsListTableViewAdapter.swift */; };
+		7E0806EE1EAE787500DBFCFE /* CollectionViewReusableViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0806EA1EAE787500DBFCFE /* CollectionViewReusableViewType.swift */; };
+		7E0806EF1EAE787500DBFCFE /* Dequeuable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0806EB1EAE787500DBFCFE /* Dequeuable.swift */; };
+		7E0806F01EAE787500DBFCFE /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0806EC1EAE787500DBFCFE /* Identifiable.swift */; };
+		7E0806F11EAE787500DBFCFE /* Registrable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0806ED1EAE787500DBFCFE /* Registrable.swift */; };
+		7E0806F31EAE794500DBFCFE /* ReusableViewEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0806F21EAE794500DBFCFE /* ReusableViewEnum.swift */; };
+		7E0806F51EAE7D7100DBFCFE /* UIImageView+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0806F41EAE7D7100DBFCFE /* UIImageView+URL.swift */; };
+		7E0806F71EAE7EBB00DBFCFE /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0806F61EAE7EBB00DBFCFE /* BaseTableViewCell.swift */; };
 		7E6B47A41EAE6A0A0075BDE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6B47A31EAE6A0A0075BDE1 /* AppDelegate.swift */; };
 		7E6B47AB1EAE6A0A0075BDE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E6B47AA1EAE6A0A0075BDE1 /* Assets.xcassets */; };
 		7E6B47AE1EAE6A0A0075BDE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6B47AC1EAE6A0A0075BDE1 /* LaunchScreen.storyboard */; };
@@ -57,6 +65,14 @@
 		7E0806E01EAE74AD00DBFCFE /* RLProductsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLProductsListViewModel.swift; sourceTree = "<group>"; };
 		7E0806E21EAE760700DBFCFE /* ProductListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListTableViewCell.swift; sourceTree = "<group>"; };
 		7E0806E31EAE760700DBFCFE /* ProductListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductListTableViewCell.xib; sourceTree = "<group>"; };
+		7E0806E61EAE77DA00DBFCFE /* ProductsListTableViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsListTableViewAdapter.swift; sourceTree = "<group>"; };
+		7E0806EA1EAE787500DBFCFE /* CollectionViewReusableViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewReusableViewType.swift; sourceTree = "<group>"; };
+		7E0806EB1EAE787500DBFCFE /* Dequeuable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dequeuable.swift; sourceTree = "<group>"; };
+		7E0806EC1EAE787500DBFCFE /* Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
+		7E0806ED1EAE787500DBFCFE /* Registrable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Registrable.swift; sourceTree = "<group>"; };
+		7E0806F21EAE794500DBFCFE /* ReusableViewEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableViewEnum.swift; sourceTree = "<group>"; };
+		7E0806F41EAE7D7100DBFCFE /* UIImageView+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+URL.swift"; sourceTree = "<group>"; };
+		7E0806F61EAE7EBB00DBFCFE /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		7E6B47A01EAE6A0A0075BDE1 /* Rokk3rLabsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rokk3rLabsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6B47A31EAE6A0A0075BDE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E6B47AA1EAE6A0A0075BDE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -123,6 +139,7 @@
 		7E0806D81EAE742800DBFCFE /* Table View Adapter */ = {
 			isa = PBXGroup;
 			children = (
+				7E0806E61EAE77DA00DBFCFE /* ProductsListTableViewAdapter.swift */,
 			);
 			name = "Table View Adapter";
 			sourceTree = "<group>";
@@ -143,6 +160,25 @@
 				7E0806E01EAE74AD00DBFCFE /* RLProductsListViewModel.swift */,
 			);
 			name = "View Model";
+			sourceTree = "<group>";
+		};
+		7E0806E81EAE786500DBFCFE /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				7E0806E91EAE786900DBFCFE /* DequeuableRegistrable */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		7E0806E91EAE786900DBFCFE /* DequeuableRegistrable */ = {
+			isa = PBXGroup;
+			children = (
+				7E0806EA1EAE787500DBFCFE /* CollectionViewReusableViewType.swift */,
+				7E0806EB1EAE787500DBFCFE /* Dequeuable.swift */,
+				7E0806EC1EAE787500DBFCFE /* Identifiable.swift */,
+				7E0806ED1EAE787500DBFCFE /* Registrable.swift */,
+			);
+			name = DequeuableRegistrable;
 			sourceTree = "<group>";
 		};
 		7E6B47971EAE6A0A0075BDE1 = {
@@ -168,6 +204,7 @@
 		7E6B47A21EAE6A0A0075BDE1 /* Rokk3rLabsTest */ = {
 			isa = PBXGroup;
 			children = (
+				7E0806E81EAE786500DBFCFE /* Libs */,
 				7EDDDB451EAE6B780080D354 /* Model */,
 				7EDDDB441EAE6B720080D354 /* Data Layer */,
 				7EDDDB491EAE6C020080D354 /* Utils */,
@@ -232,6 +269,7 @@
 			children = (
 				7EDDDB471EAE6B8E0080D354 /* BaseViewController.swift */,
 				7E0806DB1EAE744A00DBFCFE /* BaseNavigationController.swift */,
+				7E0806F61EAE7EBB00DBFCFE /* BaseTableViewCell.swift */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -239,6 +277,8 @@
 		7EDDDB491EAE6C020080D354 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				7E0806F21EAE794500DBFCFE /* ReusableViewEnum.swift */,
+				7E0806F41EAE7D7100DBFCFE /* UIImageView+URL.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -484,18 +524,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E0806F31EAE794500DBFCFE /* ReusableViewEnum.swift in Sources */,
+				7E0806F01EAE787500DBFCFE /* Identifiable.swift in Sources */,
 				7E6B47A41EAE6A0A0075BDE1 /* AppDelegate.swift in Sources */,
 				7E0806C61EAE6CF500DBFCFE /* DataManager.swift in Sources */,
+				7E0806F71EAE7EBB00DBFCFE /* BaseTableViewCell.swift in Sources */,
 				7EDDDB481EAE6B8E0080D354 /* BaseViewController.swift in Sources */,
 				7E0806DF1EAE747F00DBFCFE /* ProductsListViewModel.swift in Sources */,
 				7E0806D01EAE713C00DBFCFE /* DummyNetworkRequestEngine.swift in Sources */,
+				7E0806E71EAE77DA00DBFCFE /* ProductsListTableViewAdapter.swift in Sources */,
 				7EDDDB4E1EAE6CAE0080D354 /* Product.swift in Sources */,
 				7E0806E41EAE760700DBFCFE /* ProductListTableViewCell.swift in Sources */,
+				7E0806F51EAE7D7100DBFCFE /* UIImageView+URL.swift in Sources */,
+				7E0806EF1EAE787500DBFCFE /* Dequeuable.swift in Sources */,
 				7E0806CA1EAE707F00DBFCFE /* NetworkRequestEngine.swift in Sources */,
 				7E0806D31EAE71E600DBFCFE /* DataError.swift in Sources */,
 				7EDDDB501EAE6CB70080D354 /* ShoppingCart.swift in Sources */,
 				7E0806DC1EAE744A00DBFCFE /* BaseNavigationController.swift in Sources */,
 				7E0806E11EAE74AD00DBFCFE /* RLProductsListViewModel.swift in Sources */,
+				7E0806EE1EAE787500DBFCFE /* CollectionViewReusableViewType.swift in Sources */,
+				7E0806F11EAE787500DBFCFE /* Registrable.swift in Sources */,
 				7E0806D61EAE742500DBFCFE /* ProductsListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

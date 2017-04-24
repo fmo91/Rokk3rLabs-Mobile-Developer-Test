@@ -10,11 +10,11 @@ import Foundation
 import ObjectMapper
 
 struct Product {
-    var id          : Int?
-    var name        : String?
-    var imageURL    : String?
-    var price       : Double?
-    var stock       : Int?
+    var id          : Int       = -1
+    var name        : String    = ""
+    var imageURL    : String    = ""
+    var price       : Double    = 0.0
+    var stock       : Int       = 0
 }
 
 extension Product: Mappable {

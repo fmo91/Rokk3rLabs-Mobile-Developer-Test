@@ -7,13 +7,21 @@
 //
 
 import UIKit
-import DequeuableRegistrable
 
-class ProductListTableViewCell: UITableViewCell, Dequeuable, Registrable {
+protocol ProductListTableViewCellDelegate: class {
+    func productListTableViewCellDidPressBuyButton(on cell: ProductListTableViewCell)
+}
+
+class ProductListTableViewCell: BaseTableViewCell, Dequeuable, Registrable {
     
     // MARK: - Views -
+    @IBOutlet weak var productImageView: UIImageView!
+    @IBOutlet weak var productNameLabel: UILabel!
+    @IBOutlet weak var productPriceLabel: UILabel!
+    @IBOutlet weak var productStockLabel: UILabel!
     
     // MARK: - Attributes -
+    weak var delegate: ProductListTableViewCellDelegate?
 
     // MARK: - Life cycle -
     override func awakeFromNib() {
@@ -22,7 +30,10 @@ class ProductListTableViewCell: UITableViewCell, Dequeuable, Registrable {
     
     // MARK: - Configuration -
     func configure(product: Product) {
-        
+        productImageView.load(urlString: product.imageURL)
+        productNameLabel.text = product.name
+        productPriceLabel.text = "Price: \(product.price)"
+        productStockLabel.text = "Stock: \(product.stock)"
     }
     
     // MARK: - Size -
@@ -30,4 +41,8 @@ class ProductListTableViewCell: UITableViewCell, Dequeuable, Registrable {
         return 100.0
     }
     
+    // MARK: - Actions -
+    @IBAction func buyButtonPressed(_ sender: Any) {
+        delegate?.productListTableViewCellDidPressBuyButton(on: self)
+    }
 }

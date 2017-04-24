@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductsListViewController" customModule="Rokk3rLabsTest" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="32I-a1-TOT" id="Htb-Tz-vpc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,17 +20,17 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8CO-b2-flO">
-                    <rect key="frame" x="166.5" y="323" width="42" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="32I-a1-TOT">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="8CO-b2-flO" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="8Md-is-TLQ"/>
-                <constraint firstItem="8CO-b2-flO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AEb-cS-h8B"/>
+                <constraint firstAttribute="bottom" secondItem="32I-a1-TOT" secondAttribute="bottom" id="3Od-YE-643"/>
+                <constraint firstItem="32I-a1-TOT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MmO-tg-uOV"/>
+                <constraint firstItem="32I-a1-TOT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="VIM-52-ZOS"/>
+                <constraint firstAttribute="trailing" secondItem="32I-a1-TOT" secondAttribute="trailing" id="sDY-Wq-g72"/>
             </constraints>
         </view>
     </objects>

@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>DequeuableRegistrable.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Kingfisher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,17 +37,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>447F349DA7C389600BCC4DD6F89968FE</key>
+		<key>14A5A26312E877BA249A5C88F86D076D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9DFBBA48FFBE4FA1B2940CF09554FEC0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A1679A446F0B0882FF85BC5315F27B2C</key>
+		<key>5CFD2E62786F510642137CC312A80925</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,7 +62,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D05BCDC6C00BA4FE85B62872C5C8D369</key>
+		<key>CB0748CAA49E672B45541D932CF9700B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

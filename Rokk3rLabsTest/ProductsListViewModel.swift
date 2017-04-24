@@ -7,6 +7,12 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol ProductsListViewModel {
+    
+    var products: Variable<[Product]> { get }
+    
+    func reload()
+    
 }
