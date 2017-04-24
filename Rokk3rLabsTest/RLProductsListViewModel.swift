@@ -34,4 +34,18 @@ final class RLProductsListViewModel: ProductsListViewModel {
             .addDisposableTo(disposeBag)
     }
     
+    func didPressBuy(product: Product) {
+        let products = self.products.value
+        var newProducts = [Product]()
+
+        for _product in products {
+            if _product.id == product.id {
+                _product.stock -= 1
+            }
+            newProducts.append(_product)
+        }
+    
+        self.products.value = newProducts
+    }
+    
 }

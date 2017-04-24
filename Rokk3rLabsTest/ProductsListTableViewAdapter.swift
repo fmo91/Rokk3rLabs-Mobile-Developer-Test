@@ -8,10 +8,15 @@
 
 import UIKit
 
+protocol ProductsListTableViewAdapterDelegate: class {
+    func productsListTableViewAdapterDidSelectBuy(on product: Product)
+}
+
 class ProductsListTableViewAdapter: NSObject {
     
     // MARK: - Attributes -
     let tableView: UITableView
+    weak var delegate: ProductsListTableViewAdapterDelegate?
     
     fileprivate var products = [Product]()
     
@@ -58,6 +63,7 @@ extension ProductsListTableViewAdapter: UITableViewDelegate, UITableViewDataSour
         
         let product = products[indexPath.row]
         cell.configure(product: product)
+        cell.delegate = self
         
         return cell
     }
@@ -66,6 +72,23 @@ extension ProductsListTableViewAdapter: UITableViewDelegate, UITableViewDataSour
         return ProductListTableViewCell.height
     }
 }
+
+// MARK: - ProductListTableViewCellDelegate -
+extension ProductsListTableViewAdapter: ProductListTableViewCellDelegate {
+    func productListTableViewCellDidPressBuyButton(on cell: ProductListTableViewCell) {
+        guard let indexPath = tableView.indexPath(for: cell) else {
+            return
+        }
+        
+        let product = products[indexPath.row]
+        
+        delegate?.productsListTableViewAdapterDidSelectBuy(on: product)
+    }
+}
+
+
+
+
 
 
 

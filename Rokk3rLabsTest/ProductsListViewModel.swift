@@ -14,5 +14,6 @@ protocol ProductsListViewModel {
     var products: Variable<[Product]> { get }
     
     func reload()
+    func didPressBuy(product: Product)
     
 }

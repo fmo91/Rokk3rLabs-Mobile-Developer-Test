@@ -22,6 +22,7 @@ class ProductsListViewController: BaseViewController {
         super.viewDidLoad()
         
         tableViewAdapter = ProductsListTableViewAdapter(tableView: tableView)
+        tableViewAdapter.delegate = self
         
         viewModel
             .products.asObservable()
@@ -42,8 +43,18 @@ class ProductsListViewController: BaseViewController {
     
     // MARK: - Configuration -
     
-    private func didReceiveProducts(_ products: [Product]) {
+    fileprivate func didReceiveProducts(_ products: [Product]) {
         tableViewAdapter?.reload(with: products)
     }
 
 }
+
+// MARK: - ProductsListTableViewAdapterDelegate -
+extension ProductsListViewController: ProductsListTableViewAdapterDelegate {
+    func productsListTableViewAdapterDidSelectBuy(on product: Product) {
+        viewModel.didPressBuy(product: product)
+    }
+}
+
+
+

@@ -9,18 +9,16 @@
 import Foundation
 import ObjectMapper
 
-struct Product {
+class Product: Mappable {
     var id          : Int       = -1
     var name        : String    = ""
     var imageURL    : String    = ""
     var price       : Double    = 0.0
     var stock       : Int       = 0
-}
-
-extension Product: Mappable {
-    init?(map: Map) {}
     
-    mutating func mapping(map: Map) {
+    required init?(map: Map) {}
+    
+    func mapping(map: Map) {
         id          <- map["id"]
         name        <- map["name"]
         imageURL    <- map["image_url"]

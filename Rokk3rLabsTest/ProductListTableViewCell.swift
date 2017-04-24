@@ -28,6 +28,10 @@ class ProductListTableViewCell: BaseTableViewCell, Dequeuable, Registrable {
         super.awakeFromNib()
     }
     
+    override func prepareForReuse() {
+        productImageView.cancelDownload()
+    }
+    
     // MARK: - Configuration -
     func configure(product: Product) {
         productImageView.load(urlString: product.imageURL)

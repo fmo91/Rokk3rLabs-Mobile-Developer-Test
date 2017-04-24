@@ -31,4 +31,8 @@ extension UIImageView {
         )
     }
     
+    func cancelDownload() {
+        self.kf.cancelDownloadTask()
+    }
+    
 }
