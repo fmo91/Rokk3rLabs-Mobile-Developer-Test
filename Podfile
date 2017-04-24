@@ -10,6 +10,7 @@ target 'Rokk3rLabsTest' do
     pod 'RxCocoa'       , '3.0.1'
     pod 'ObjectMapper'  , '2.2.2'
     pod 'Kingfisher'
+    pod 'DZNEmptyDataSet', '1.8.1'
 
     target 'Rokk3rLabsTestTests' do
         inherit! :search_paths

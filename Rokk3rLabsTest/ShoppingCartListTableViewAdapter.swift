@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DZNEmptyDataSet
 
 protocol ShoppingCartListTableViewAdapterDelegate: class {
     func productsListTableViewAdapterDidSelectRemove(on product: Product)
@@ -33,6 +34,9 @@ final class ShoppingCartListTableViewAdapter: NSObject {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
+        
+        tableView.emptyDataSetSource = self
+        tableView.emptyDataSetDelegate = self
     }
     
     func reload(products: [Product]) {
@@ -80,7 +84,29 @@ extension ShoppingCartListTableViewAdapter: ShoppingCartProductTableViewCellDele
     }
 }
 
+// MARK: - DZNEmptyDataSetSource, DZNEmptyDataSetDelegate -
+extension ShoppingCartListTableViewAdapter: DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
+    
+    func title(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
+        return NSAttributedString(
+            string: "No products yet",
+            attributes: [
+                NSFontAttributeName: UIFont.boldSystemFont(ofSize: 19.0),
+                NSForegroundColorAttributeName: UIColor(red: 118, green: 97, blue: 241, alpha: 1.0)
+            ]
+        )
+    }
 
+    func description(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
+        return NSAttributedString(
+            string: "Go back to start purchasing",
+            attributes: [
+                NSFontAttributeName: UIFont.systemFont(ofSize: 16.0),
+                NSForegroundColorAttributeName: UIColor(red: 150, green: 150, blue: 150, alpha: 1.0)
+            ]
+        )
+    }
+}
 
 
 

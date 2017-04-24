@@ -1,4 +1,5 @@
 PODS:
+  - DZNEmptyDataSet (1.8.1)
   - Kingfisher (3.3.4)
   - ObjectMapper (2.2.2)
   - RxCocoa (3.0.1):
@@ -6,17 +7,19 @@ PODS:
   - RxSwift (3.0.1)
 
 DEPENDENCIES:
+  - DZNEmptyDataSet (= 1.8.1)
   - Kingfisher
   - ObjectMapper (= 2.2.2)
   - RxCocoa (= 3.0.1)
   - RxSwift (= 3.0.1)
 
 SPEC CHECKSUMS:
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   Kingfisher: 35f289f015d26e81ea6c85048718c6205f3933c6
   ObjectMapper: 9e385c2295bcc4e16eabbcfc85db801442bba545
   RxCocoa: 15a52fc590dcc700cb4a690a633b5c5184ce3a78
   RxSwift: af5680055c4ad04480189c52d28385b1029493a6
 
-PODFILE CHECKSUM: bc96a32d5b420ff437f6c25b4f3f1e0ce74c6d8e
+PODFILE CHECKSUM: 6822ae3e5e969aecfbaf0b93b1b78b5936cb63b8
 
 COCOAPODS: 1.1.1
