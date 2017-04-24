@@ -11,6 +11,16 @@
 		2265771C766BA6760B4129A5 /* Pods_Rokk3rLabsTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D79051FACB136FB5B73C2D /* Pods_Rokk3rLabsTestTests.framework */; };
 		7E0806C61EAE6CF500DBFCFE /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0806C51EAE6CF500DBFCFE /* DataManager.swift */; };
 		7E0806C81EAE6DCD00DBFCFE /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E0806C71EAE6DCD00DBFCFE /* products.json */; };
+		7E0806CA1EAE707F00DBFCFE /* NetworkRequestEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0806C91EAE707F00DBFCFE /* NetworkRequestEngine.swift */; };
+		7E0806D01EAE713C00DBFCFE /* DummyNetworkRequestEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0806CF1EAE713C00DBFCFE /* DummyNetworkRequestEngine.swift */; };
+		7E0806D31EAE71E600DBFCFE /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0806D21EAE71E600DBFCFE /* DataError.swift */; };
+		7E0806D61EAE742500DBFCFE /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0806D41EAE742500DBFCFE /* ProductsListViewController.swift */; };
+		7E0806D71EAE742500DBFCFE /* ProductsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E0806D51EAE742500DBFCFE /* ProductsListViewController.xib */; };
+		7E0806DC1EAE744A00DBFCFE /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0806DB1EAE744A00DBFCFE /* BaseNavigationController.swift */; };
+		7E0806DF1EAE747F00DBFCFE /* ProductsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0806DE1EAE747F00DBFCFE /* ProductsListViewModel.swift */; };
+		7E0806E11EAE74AD00DBFCFE /* RLProductsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0806E01EAE74AD00DBFCFE /* RLProductsListViewModel.swift */; };
+		7E0806E41EAE760700DBFCFE /* ProductListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0806E21EAE760700DBFCFE /* ProductListTableViewCell.swift */; };
+		7E0806E51EAE760700DBFCFE /* ProductListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E0806E31EAE760700DBFCFE /* ProductListTableViewCell.xib */; };
 		7E6B47A41EAE6A0A0075BDE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6B47A31EAE6A0A0075BDE1 /* AppDelegate.swift */; };
 		7E6B47AB1EAE6A0A0075BDE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E6B47AA1EAE6A0A0075BDE1 /* Assets.xcassets */; };
 		7E6B47AE1EAE6A0A0075BDE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6B47AC1EAE6A0A0075BDE1 /* LaunchScreen.storyboard */; };
@@ -37,6 +47,16 @@
 		780211B1200BB0388B1B6F9E /* Pods-Rokk3rLabsTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rokk3rLabsTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rokk3rLabsTestTests/Pods-Rokk3rLabsTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		7E0806C51EAE6CF500DBFCFE /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		7E0806C71EAE6DCD00DBFCFE /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
+		7E0806C91EAE707F00DBFCFE /* NetworkRequestEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequestEngine.swift; sourceTree = "<group>"; };
+		7E0806CF1EAE713C00DBFCFE /* DummyNetworkRequestEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyNetworkRequestEngine.swift; sourceTree = "<group>"; };
+		7E0806D21EAE71E600DBFCFE /* DataError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
+		7E0806D41EAE742500DBFCFE /* ProductsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsListViewController.swift; sourceTree = "<group>"; };
+		7E0806D51EAE742500DBFCFE /* ProductsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductsListViewController.xib; sourceTree = "<group>"; };
+		7E0806DB1EAE744A00DBFCFE /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		7E0806DE1EAE747F00DBFCFE /* ProductsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsListViewModel.swift; sourceTree = "<group>"; };
+		7E0806E01EAE74AD00DBFCFE /* RLProductsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLProductsListViewModel.swift; sourceTree = "<group>"; };
+		7E0806E21EAE760700DBFCFE /* ProductListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListTableViewCell.swift; sourceTree = "<group>"; };
+		7E0806E31EAE760700DBFCFE /* ProductListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductListTableViewCell.xib; sourceTree = "<group>"; };
 		7E6B47A01EAE6A0A0075BDE1 /* Rokk3rLabsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rokk3rLabsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6B47A31EAE6A0A0075BDE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E6B47AA1EAE6A0A0075BDE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,6 +101,48 @@
 				780211B1200BB0388B1B6F9E /* Pods-Rokk3rLabsTestTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		7E0806CB1EAE708200DBFCFE /* Network Requests Engine */ = {
+			isa = PBXGroup;
+			children = (
+				7E0806C91EAE707F00DBFCFE /* NetworkRequestEngine.swift */,
+				7E0806CF1EAE713C00DBFCFE /* DummyNetworkRequestEngine.swift */,
+			);
+			name = "Network Requests Engine";
+			sourceTree = "<group>";
+		};
+		7E0806D11EAE71DE00DBFCFE /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				7E0806D21EAE71E600DBFCFE /* DataError.swift */,
+			);
+			name = Errors;
+			sourceTree = "<group>";
+		};
+		7E0806D81EAE742800DBFCFE /* Table View Adapter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Table View Adapter";
+			sourceTree = "<group>";
+		};
+		7E0806D91EAE742D00DBFCFE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7E0806E21EAE760700DBFCFE /* ProductListTableViewCell.swift */,
+				7E0806E31EAE760700DBFCFE /* ProductListTableViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		7E0806DD1EAE747000DBFCFE /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				7E0806DE1EAE747F00DBFCFE /* ProductsListViewModel.swift */,
+				7E0806E01EAE74AD00DBFCFE /* RLProductsListViewModel.swift */,
+			);
+			name = "View Model";
 			sourceTree = "<group>";
 		};
 		7E6B47971EAE6A0A0075BDE1 = {
@@ -148,6 +210,8 @@
 		7EDDDB441EAE6B720080D354 /* Data Layer */ = {
 			isa = PBXGroup;
 			children = (
+				7E0806D11EAE71DE00DBFCFE /* Errors */,
+				7E0806CB1EAE708200DBFCFE /* Network Requests Engine */,
 				7EDDDB4A1EAE6C0A0080D354 /* Dummy Data */,
 				7E0806C51EAE6CF500DBFCFE /* DataManager.swift */,
 			);
@@ -167,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				7EDDDB471EAE6B8E0080D354 /* BaseViewController.swift */,
+				7E0806DB1EAE744A00DBFCFE /* BaseNavigationController.swift */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -189,6 +254,11 @@
 		7EDDDB4B1EAE6C160080D354 /* Products List */ = {
 			isa = PBXGroup;
 			children = (
+				7E0806DD1EAE747000DBFCFE /* View Model */,
+				7E0806D91EAE742D00DBFCFE /* Cells */,
+				7E0806D81EAE742800DBFCFE /* Table View Adapter */,
+				7E0806D41EAE742500DBFCFE /* ProductsListViewController.swift */,
+				7E0806D51EAE742500DBFCFE /* ProductsListViewController.xib */,
 			);
 			name = "Products List";
 			sourceTree = "<group>";
@@ -265,6 +335,7 @@
 				TargetAttributes = {
 					7E6B479F1EAE6A0A0075BDE1 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = EUARY92ECY;
 						ProvisioningStyle = Automatic;
 					};
 					7E6B47B31EAE6A0B0075BDE1 = {
@@ -298,8 +369,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E0806E51EAE760700DBFCFE /* ProductListTableViewCell.xib in Resources */,
 				7E0806C81EAE6DCD00DBFCFE /* products.json in Resources */,
 				7E6B47AE1EAE6A0A0075BDE1 /* LaunchScreen.storyboard in Resources */,
+				7E0806D71EAE742500DBFCFE /* ProductsListViewController.xib in Resources */,
 				7E6B47AB1EAE6A0A0075BDE1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,8 +487,16 @@
 				7E6B47A41EAE6A0A0075BDE1 /* AppDelegate.swift in Sources */,
 				7E0806C61EAE6CF500DBFCFE /* DataManager.swift in Sources */,
 				7EDDDB481EAE6B8E0080D354 /* BaseViewController.swift in Sources */,
+				7E0806DF1EAE747F00DBFCFE /* ProductsListViewModel.swift in Sources */,
+				7E0806D01EAE713C00DBFCFE /* DummyNetworkRequestEngine.swift in Sources */,
 				7EDDDB4E1EAE6CAE0080D354 /* Product.swift in Sources */,
+				7E0806E41EAE760700DBFCFE /* ProductListTableViewCell.swift in Sources */,
+				7E0806CA1EAE707F00DBFCFE /* NetworkRequestEngine.swift in Sources */,
+				7E0806D31EAE71E600DBFCFE /* DataError.swift in Sources */,
 				7EDDDB501EAE6CB70080D354 /* ShoppingCart.swift in Sources */,
+				7E0806DC1EAE744A00DBFCFE /* BaseNavigationController.swift in Sources */,
+				7E0806E11EAE74AD00DBFCFE /* RLProductsListViewModel.swift in Sources */,
+				7E0806D61EAE742500DBFCFE /* ProductsListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,6 +626,7 @@
 			baseConfigurationReference = 864C6DFDBE4ED27A7F5FC072 /* Pods-Rokk3rLabsTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EUARY92ECY;
 				INFOPLIST_FILE = Rokk3rLabsTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.infinixsoft.Rokk3rLabsTest;
@@ -558,6 +640,7 @@
 			baseConfigurationReference = 65E779961C829F77A51CA983 /* Pods-Rokk3rLabsTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EUARY92ECY;
 				INFOPLIST_FILE = Rokk3rLabsTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.infinixsoft.Rokk3rLabsTest;

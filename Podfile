@@ -6,9 +6,10 @@ target 'Rokk3rLabsTest' do
     use_frameworks!
 
     # Pods for Rokk3rLabsTest
-    pod 'RxSwift',    '3.0.1'
-    pod 'RxCocoa',    '3.0.1'
-    pod 'ObjectMapper', '2.2.2'
+    pod 'RxSwift'       , '3.0.1'
+    pod 'RxCocoa'       , '3.0.1'
+    pod 'ObjectMapper'  , '2.2.2'
+    pod 'Kingfisher'
 
     # Easily register and dequeue cells without using strings
     # https://fmo91.github.io/DequeuableRegistrable/

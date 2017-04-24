@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Kingfisher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>ObjectMapper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,12 +42,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>065B19D49651AE24FD037B1793B865D6</key>
+		<key>447F349DA7C389600BCC4DD6F89968FE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4E45E4F90CFDEB523BAF603C3DDE93B7</key>
+		<key>9DFBBA48FFBE4FA1B2940CF09554FEC0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +67,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EAD20C9BAC406E0123CE0A6CD512B26A</key>
+		<key>C4944FEC314D1A66588651D006273ADE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D05BCDC6C00BA4FE85B62872C5C8D369</key>
 		<dict>
 			<key>primary</key>
 			<true/>

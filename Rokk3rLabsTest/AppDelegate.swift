@@ -17,9 +17,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Application life cycle -
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        
-        
+        startApplication()
+
         return true
+    }
+    
+    private func startApplication() {
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        
+        let dummyDataManager = DataManager.dummyManager()
+        let productsListViewModel = RLProductsListViewModel(dataManager: dummyDataManager)
+        let productsListViewController = ProductsListViewController(viewModel: productsListViewModel)
+        
+        let initialNavigationController = BaseNavigationController(rootViewController:
+            productsListViewController)
+        
+        self.window?.rootViewController = initialNavigationController
+        self.window!.makeKeyAndVisible()
     }
 }
 
