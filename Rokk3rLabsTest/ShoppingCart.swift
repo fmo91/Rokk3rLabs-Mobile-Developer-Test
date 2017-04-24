@@ -21,7 +21,7 @@ final class ShoppingCart {
             products[index].stock += 1
         } else {
             var newProduct = product
-            newProduct.stock -= 1
+            newProduct.stock = 1
             products.append(newProduct)
         }
     }

@@ -8,17 +8,17 @@
     },
     {
         "id": 2,
-        "name": "Pikachu toy",
-        "image_url": "https://images-na.ssl-images-amazon.com/images/I/41PEYhzWEqL._SX300_.jpg",
-        "price": 23.50,
-        "stock": 10
+        "name": "Bed",
+        "image_url": "http://www.ikea.com/id/en/images/products/tarva-bed-frame__0448696_PE598331_S4.JPG",
+        "price": 500.20,
+        "stock": 3
     },
     {
         "id": 3,
-        "name": "Pikachu toy",
-        "image_url": "https://images-na.ssl-images-amazon.com/images/I/41PEYhzWEqL._SX300_.jpg",
-        "price": 23.50,
-        "stock": 10
+        "name": "Cookies",
+        "image_url": "http://pullupparty.com/wp-content/uploads/2016/02/Choc.png",
+        "price": 3.50,
+        "stock": 100
     },
     {
         "id": 4,

@@ -21,15 +21,15 @@ class ProductsListViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableViewAdapter = ProductsListTableViewAdapter(tableView: tableView)
-        tableViewAdapter.delegate = self
+        configureNavigationBar()
+        configureTableViewAdapter()
+        configureViewModel()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        viewModel
-            .products.asObservable()
-            .subscribe(onNext: didReceiveProducts)
-            .addDisposableTo(disposeBag)
-        
-        viewModel.reload()
+        didReceiveProducts(viewModel.products.value)
     }
     
     // MARK: - Init -
@@ -43,10 +43,37 @@ class ProductsListViewController: BaseViewController {
     
     // MARK: - Configuration -
     
+    private func configureNavigationBar() {
+        let shoppingCartBarButton = UIBarButtonItem(title: "Cart", style: UIBarButtonItemStyle.done, target: self, action: #selector(shoppingCartBarButtonPressed))
+        
+        navigationItem.rightBarButtonItem = shoppingCartBarButton
+    }
+    
+    private func configureTableViewAdapter() {
+        tableViewAdapter = ProductsListTableViewAdapter(tableView: tableView)
+        tableViewAdapter.delegate = self
+    }
+    
+    private func configureViewModel() {
+        viewModel
+            .products.asObservable()
+            .subscribe(onNext: didReceiveProducts)
+            .addDisposableTo(disposeBag)
+        
+        viewModel.reload()
+    }
+    
     fileprivate func didReceiveProducts(_ products: [Product]) {
         tableViewAdapter?.reload(with: products)
     }
 
+    // MARK: - Actions -
+    @objc private func shoppingCartBarButtonPressed() {
+        let shoppingCartViewController = ShoppingCartListViewController.instantiate()
+        let shoppingCartNavigationController = BaseNavigationController(rootViewController: shoppingCartViewController)
+        shoppingCartViewController.delegate = self
+        self.present(shoppingCartNavigationController, animated: true, completion: nil)
+    }
 }
 
 // MARK: - ProductsListTableViewAdapterDelegate -
@@ -56,5 +83,10 @@ extension ProductsListViewController: ProductsListTableViewAdapterDelegate {
     }
 }
 
-
+// MARK: - ShoppingCartListViewControllerDelegate -
+extension ProductsListViewController: ShoppingCartListViewControllerDelegate {
+    func didSelectRemove(product: Product) {
+        viewModel.didPressRemove(product: product)
+    }
+}
 

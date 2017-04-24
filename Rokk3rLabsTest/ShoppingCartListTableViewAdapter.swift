@@ -32,6 +32,12 @@ final class ShoppingCartListTableViewAdapter: NSObject {
         
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.tableFooterView = UIView()
+    }
+    
+    func reload(products: [Product]) {
+        self.products = products
+        self.tableView.reloadData()
     }
     
 }

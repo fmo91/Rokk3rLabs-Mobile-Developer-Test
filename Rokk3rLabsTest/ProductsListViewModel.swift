@@ -15,5 +15,5 @@ protocol ProductsListViewModel {
     
     func reload()
     func didPressBuy(product: Product)
-    
+    func didPressRemove(product: Product)
 }

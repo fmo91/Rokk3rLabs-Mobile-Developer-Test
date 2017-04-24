@@ -35,6 +35,9 @@
                                 <integer key="value" value="8"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="buyButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="B4e-i8-n1q"/>
+                        </connections>
                     </button>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SJP-e5-NGl">
                         <rect key="frame" x="15" y="10" width="65" height="65"/>
@@ -81,6 +84,12 @@
                     <constraint firstItem="mgy-81-ons" firstAttribute="trailing" secondItem="GYu-Es-geg" secondAttribute="trailing" id="lyh-No-OrK"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="productImageView" destination="SJP-e5-NGl" id="l4w-GF-8nt"/>
+                <outlet property="productNameLabel" destination="oGI-ZX-y4v" id="zaV-W0-TnQ"/>
+                <outlet property="productPriceLabel" destination="Ptc-2g-1lA" id="JUH-Xh-oWz"/>
+                <outlet property="productStockLabel" destination="TFI-ov-pJ2" id="qSX-of-HTI"/>
+            </connections>
             <point key="canvasLocation" x="44" y="77"/>
         </tableViewCell>
     </objects>

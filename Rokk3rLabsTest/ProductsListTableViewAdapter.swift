@@ -38,6 +38,7 @@ class ProductsListTableViewAdapter: NSObject {
         
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.tableFooterView = UIView()
     }
 
     // MARK: - Public -

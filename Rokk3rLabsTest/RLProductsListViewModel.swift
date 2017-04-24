@@ -27,6 +27,7 @@ final class RLProductsListViewModel: ProductsListViewModel {
         dataManager
             .getProducts()
             .map (excludeProductsWithoutStock)
+            .map (calculateShoppingCartProducts)
             .subscribe(
                 onNext: { products in
                     self.products.value = products
@@ -40,6 +41,20 @@ final class RLProductsListViewModel: ProductsListViewModel {
             .filter { product in
                 return product.stock > 0
             }
+    }
+    
+    private func calculateShoppingCartProducts(from products: [Product]) -> [Product] {
+        let newProducts = products
+        
+        for shoppingCartProduct in ShoppingCart.shared.products {
+            if var product = newProducts
+                .filter({ $0.id == shoppingCartProduct.id })
+                .first {
+                product.stock -= shoppingCartProduct.stock
+            }
+        }
+        
+        return newProducts
     }
     
     func didPressBuy(product: Product) {
@@ -61,4 +76,18 @@ final class RLProductsListViewModel: ProductsListViewModel {
             }
     }
     
+    func didPressRemove(product: Product) {
+        let products = self.products.value
+        var newProducts = products
+        
+        if let index = products.index(where: { (prod: Product) -> Bool in
+            return prod.id == product.id
+        }) {
+            newProducts[index].stock += 1
+        } else {
+            newProducts.append(product)
+        }
+        
+        self.products.value = newProducts
+    }
 }
