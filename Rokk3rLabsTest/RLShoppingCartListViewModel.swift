@@ -1,5 +1,5 @@
 //
-//  RLProductsListViewModel.swift
+//  RLShoppingCartListViewModel.swift
 //  Rokk3rLabsTest
 //
 //  Created by Fernando on 24/4/17.
@@ -9,14 +9,14 @@
 import Foundation
 import RxSwift
 
-final class RLProductsListViewModel: ProductsListViewModel {
+final class RLShoppingCartListViewModel: ShoppingCartListViewModel {
     
     // MARK: - Attributes -
     let disposeBag = DisposeBag()
     let dataManager: DataManager
     
     var products: Variable<[Product]> = Variable<[Product]>([])
- 
+    
     // MARK: - Init -
     init(dataManager: DataManager) {
         self.dataManager = dataManager
@@ -24,8 +24,7 @@ final class RLProductsListViewModel: ProductsListViewModel {
     
     // MARK: - Public -
     func reload() {
-        dataManager
-            .getProducts()
+        Observable.just(ShoppingCart.shared.products)
             .map (excludeProductsWithoutStock)
             .subscribe(
                 onNext: { products in
@@ -39,13 +38,13 @@ final class RLProductsListViewModel: ProductsListViewModel {
         return products
             .filter { product in
                 return product.stock > 0
-            }
+        }
     }
     
-    func didPressBuy(product: Product) {
+    func didPressRemove(product: Product) {
         let products = self.products.value
         var newProducts = [Product]()
-
+        
         for var _product in products {
             if _product.id == product.id {
                 _product.stock -= 1
@@ -53,8 +52,8 @@ final class RLProductsListViewModel: ProductsListViewModel {
             newProducts.append(_product)
         }
         
-        ShoppingCart.shared.add(product: product)
-    
+        ShoppingCart.shared.remove(product: product)
+        
         self.products.value = newProducts
             .filter { product in
                 return product.stock > 0

@@ -29,6 +29,13 @@
 		7E0806F31EAE794500DBFCFE /* ReusableViewEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0806F21EAE794500DBFCFE /* ReusableViewEnum.swift */; };
 		7E0806F51EAE7D7100DBFCFE /* UIImageView+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0806F41EAE7D7100DBFCFE /* UIImageView+URL.swift */; };
 		7E0806F71EAE7EBB00DBFCFE /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0806F61EAE7EBB00DBFCFE /* BaseTableViewCell.swift */; };
+		7E0806FA1EAE863700DBFCFE /* ShoppingCartListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0806F81EAE863700DBFCFE /* ShoppingCartListViewController.swift */; };
+		7E0806FB1EAE863700DBFCFE /* ShoppingCartListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E0806F91EAE863700DBFCFE /* ShoppingCartListViewController.xib */; };
+		7E0807001EAE86FC00DBFCFE /* ShoppingCartListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0806FF1EAE86FC00DBFCFE /* ShoppingCartListViewModel.swift */; };
+		7E0807021EAE870900DBFCFE /* RLShoppingCartListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0807011EAE870900DBFCFE /* RLShoppingCartListViewModel.swift */; };
+		7E0807041EAE873100DBFCFE /* ShoppingCartListTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0807031EAE873100DBFCFE /* ShoppingCartListTableViewAdapter.swift */; };
+		7E0807071EAE87B000DBFCFE /* ShoppingCartProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0807051EAE87B000DBFCFE /* ShoppingCartProductTableViewCell.swift */; };
+		7E0807081EAE87B000DBFCFE /* ShoppingCartProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E0807061EAE87B000DBFCFE /* ShoppingCartProductTableViewCell.xib */; };
 		7E6B47A41EAE6A0A0075BDE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6B47A31EAE6A0A0075BDE1 /* AppDelegate.swift */; };
 		7E6B47AB1EAE6A0A0075BDE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E6B47AA1EAE6A0A0075BDE1 /* Assets.xcassets */; };
 		7E6B47AE1EAE6A0A0075BDE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6B47AC1EAE6A0A0075BDE1 /* LaunchScreen.storyboard */; };
@@ -73,6 +80,13 @@
 		7E0806F21EAE794500DBFCFE /* ReusableViewEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableViewEnum.swift; sourceTree = "<group>"; };
 		7E0806F41EAE7D7100DBFCFE /* UIImageView+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+URL.swift"; sourceTree = "<group>"; };
 		7E0806F61EAE7EBB00DBFCFE /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		7E0806F81EAE863700DBFCFE /* ShoppingCartListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCartListViewController.swift; sourceTree = "<group>"; };
+		7E0806F91EAE863700DBFCFE /* ShoppingCartListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShoppingCartListViewController.xib; sourceTree = "<group>"; };
+		7E0806FF1EAE86FC00DBFCFE /* ShoppingCartListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCartListViewModel.swift; sourceTree = "<group>"; };
+		7E0807011EAE870900DBFCFE /* RLShoppingCartListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLShoppingCartListViewModel.swift; sourceTree = "<group>"; };
+		7E0807031EAE873100DBFCFE /* ShoppingCartListTableViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCartListTableViewAdapter.swift; sourceTree = "<group>"; };
+		7E0807051EAE87B000DBFCFE /* ShoppingCartProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCartProductTableViewCell.swift; sourceTree = "<group>"; };
+		7E0807061EAE87B000DBFCFE /* ShoppingCartProductTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShoppingCartProductTableViewCell.xib; sourceTree = "<group>"; };
 		7E6B47A01EAE6A0A0075BDE1 /* Rokk3rLabsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rokk3rLabsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6B47A31EAE6A0A0075BDE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E6B47AA1EAE6A0A0075BDE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -179,6 +193,32 @@
 				7E0806ED1EAE787500DBFCFE /* Registrable.swift */,
 			);
 			name = DequeuableRegistrable;
+			sourceTree = "<group>";
+		};
+		7E0806FC1EAE863A00DBFCFE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7E0807051EAE87B000DBFCFE /* ShoppingCartProductTableViewCell.swift */,
+				7E0807061EAE87B000DBFCFE /* ShoppingCartProductTableViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		7E0806FD1EAE863E00DBFCFE /* TableViewAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				7E0807031EAE873100DBFCFE /* ShoppingCartListTableViewAdapter.swift */,
+			);
+			name = TableViewAdapter;
+			sourceTree = "<group>";
+		};
+		7E0806FE1EAE864400DBFCFE /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				7E0806FF1EAE86FC00DBFCFE /* ShoppingCartListViewModel.swift */,
+				7E0807011EAE870900DBFCFE /* RLShoppingCartListViewModel.swift */,
+			);
+			name = "View Model";
 			sourceTree = "<group>";
 		};
 		7E6B47971EAE6A0A0075BDE1 = {
@@ -306,6 +346,11 @@
 		7EDDDB4C1EAE6C1D0080D354 /* Shopping Cart List */ = {
 			isa = PBXGroup;
 			children = (
+				7E0806FE1EAE864400DBFCFE /* View Model */,
+				7E0806FC1EAE863A00DBFCFE /* Cells */,
+				7E0806FD1EAE863E00DBFCFE /* TableViewAdapter */,
+				7E0806F81EAE863700DBFCFE /* ShoppingCartListViewController.swift */,
+				7E0806F91EAE863700DBFCFE /* ShoppingCartListViewController.xib */,
 			);
 			name = "Shopping Cart List";
 			sourceTree = "<group>";
@@ -409,8 +454,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E0807081EAE87B000DBFCFE /* ShoppingCartProductTableViewCell.xib in Resources */,
 				7E0806E51EAE760700DBFCFE /* ProductListTableViewCell.xib in Resources */,
 				7E0806C81EAE6DCD00DBFCFE /* products.json in Resources */,
+				7E0806FB1EAE863700DBFCFE /* ShoppingCartListViewController.xib in Resources */,
 				7E6B47AE1EAE6A0A0075BDE1 /* LaunchScreen.storyboard in Resources */,
 				7E0806D71EAE742500DBFCFE /* ProductsListViewController.xib in Resources */,
 				7E6B47AB1EAE6A0A0075BDE1 /* Assets.xcassets in Resources */,
@@ -524,10 +571,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E0807041EAE873100DBFCFE /* ShoppingCartListTableViewAdapter.swift in Sources */,
 				7E0806F31EAE794500DBFCFE /* ReusableViewEnum.swift in Sources */,
 				7E0806F01EAE787500DBFCFE /* Identifiable.swift in Sources */,
 				7E6B47A41EAE6A0A0075BDE1 /* AppDelegate.swift in Sources */,
 				7E0806C61EAE6CF500DBFCFE /* DataManager.swift in Sources */,
+				7E0807071EAE87B000DBFCFE /* ShoppingCartProductTableViewCell.swift in Sources */,
+				7E0806FA1EAE863700DBFCFE /* ShoppingCartListViewController.swift in Sources */,
 				7E0806F71EAE7EBB00DBFCFE /* BaseTableViewCell.swift in Sources */,
 				7EDDDB481EAE6B8E0080D354 /* BaseViewController.swift in Sources */,
 				7E0806DF1EAE747F00DBFCFE /* ProductsListViewModel.swift in Sources */,
@@ -538,10 +588,12 @@
 				7E0806F51EAE7D7100DBFCFE /* UIImageView+URL.swift in Sources */,
 				7E0806EF1EAE787500DBFCFE /* Dequeuable.swift in Sources */,
 				7E0806CA1EAE707F00DBFCFE /* NetworkRequestEngine.swift in Sources */,
+				7E0807001EAE86FC00DBFCFE /* ShoppingCartListViewModel.swift in Sources */,
 				7E0806D31EAE71E600DBFCFE /* DataError.swift in Sources */,
 				7EDDDB501EAE6CB70080D354 /* ShoppingCart.swift in Sources */,
 				7E0806DC1EAE744A00DBFCFE /* BaseNavigationController.swift in Sources */,
 				7E0806E11EAE74AD00DBFCFE /* RLProductsListViewModel.swift in Sources */,
+				7E0807021EAE870900DBFCFE /* RLShoppingCartListViewModel.swift in Sources */,
 				7E0806EE1EAE787500DBFCFE /* CollectionViewReusableViewType.swift in Sources */,
 				7E0806F11EAE787500DBFCFE /* Registrable.swift in Sources */,
 				7E0806D61EAE742500DBFCFE /* ProductsListViewController.swift in Sources */,
